@@ -1,8 +1,7 @@
 <template>
   <div>
     <!-- Carousel--slide show -->
-    <!-- <Carousel></Carousel> -->
-    <SlideShow></SlideShow>
+    <Carousel></Carousel>
     <!-- browse cakes -->
     <BrowseCake></BrowseCake> 
 
@@ -10,15 +9,13 @@
 </template>
 
 <script>
-// import Carousel from "../components/Carousel";
+import Carousel from "../components/Carousel";
 import BrowseCake from "../components/BrowseCake";
-import SlideShow from "../components/SlideShow";
 
 export default {
   components: {
-    // Carousel,
+    Carousel,
     BrowseCake,
-    SlideShow
   }
 };
 </script>
