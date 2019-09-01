@@ -14,7 +14,6 @@
                             <ul class="navbar-nav  ">
                                 <router-link class="nav-item nav-link topLink" v-for="(topLink,index) in linksTop"
                                     :key="index" :to="topLink.path" tag="a" active-class="active" exact>
-                                    <!-- <i :class="topLink.icon"></i> -->
                                     <!-- <i class="far fa-file-alt"></i> -->
                                     <font-awesome-icon :icon="['fa','Coffee']"></font-awesome-icon>
                                     {{ topLink.name }}
