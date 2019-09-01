@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <!-- Carousel--slide show -->
+    <!-- <Carousel></Carousel> -->
+    <SlideShow></SlideShow>
+    <!-- browse cakes -->
+    <BrowseCake></BrowseCake> 
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+// import Carousel from "../components/Carousel";
+import BrowseCake from "../components/BrowseCake";
+import SlideShow from "../components/SlideShow";
 
 export default {
-  name: "home",
   components: {
-    HelloWorld
+    // Carousel,
+    BrowseCake,
+    SlideShow
   }
 };
 </script>
+
+<style scoped>
+</style>
