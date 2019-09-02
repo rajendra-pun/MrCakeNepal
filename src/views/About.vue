@@ -7,7 +7,7 @@
 import AboutComp from "../components/AboutComp"
 export default {
   components:{
-    AboutComp
+    AboutComp,
   }
   
 }

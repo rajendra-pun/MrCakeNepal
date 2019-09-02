@@ -10,10 +10,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // fontawesome start
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faUserSecret);
+library.add(faUserSecret, faCoffee);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 // fontawesome ends

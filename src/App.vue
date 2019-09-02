@@ -21,8 +21,11 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style >
 * {
-  margin-top: 0px;
+  /* margin-top: 0px; */
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 </style>

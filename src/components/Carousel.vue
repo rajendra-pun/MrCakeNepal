@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bd-example">
+    <div class="bd-example" >
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -9,13 +9,14 @@
         </ol>
         <div class="carousel-inner">
           <div
+          
             v-for="(slide, index) in slideImg"
             :key="index"
             :class="['carousel-item', 'cake', index==0?'active': '' ]"
             :style="{backgroundImage:`url(${slide.imgUrl})`}"
           >
             <div class="bg-dim"></div>
-            'slide-text'+(index+1)
+            <!-- 'slide-text'+(index+1)..yo slide showma loop lagakoxa 3different slidexa esko lagi index+1 le kam garaxa next next image dekhauna lai class chai suru slide-text1 and 2 and 3 -->
             <div :class="['carousel-caption', 'd-none', 'd-md-block', 'slide-text'+(index+1)]">
               <h5 :class="['slide-text>h4'+(index+1)]">{{ slide.title }}</h5>
               <p :class="['slide-text>p'+(index+1)]">{{ slide.details}}</p>
