@@ -1,5 +1,26 @@
 <template>
   <div class="container about">
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            
+            <router-link
+             v-for="(link, index) in links"
+             :key="index"
+             :to="link.path"
+             class="breadcrumb-item"
+             tag="a"
+             active-class="active"
+             exact
+             >
+              {{ link.name }}
+             </router-link>
+          </ol>
+        </nav>
+      </div>
+    </div>
       <div class="row">
           <div class="col-md-12">
 
@@ -28,13 +49,39 @@
 export default {
   data() {
     return {
-      path: "/faq"
+      path: "/faq",
+      links:[
+        {
+          id:1,
+          name:"Home",
+          path:"/"
+        },
+        {
+          id:1,
+          name:"About",
+          path:"/about"
+        }
+      ]
     };
   }
 };
 </script>
 
 <style scoped>
+/* breadcrumb starts */
+.breadcrumb{
+  background-color: #f5f5f5!important;
+  border-radius: 4px;
+  padding:8px 15px;
+  margin-bottom: 20px;
+}
+/* this for slace(/) which comes between home and about */
+.breadcrumb-item+.breadcrumb-item::before {
+    padding: 0 5px;
+    color: #ccc;
+}
+/* breadcrumb ends */
+
 .about p  {
   text-align: justify;
   color: #555;
@@ -50,11 +97,11 @@ export default {
   color: rgb(255, 67, 102);
   font-size: 18px;
 }
-.about p a {
+a {
   color: #555;
-  text-decoration: none;
+  text-decoration: none!important;
 }
-.about p a:hover {
+ a:hover {
   color: rgb(255, 67, 102);
   /* background-color: transparent; */
   cursor: pointer;

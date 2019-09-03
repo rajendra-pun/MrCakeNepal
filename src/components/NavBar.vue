@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bg">
       <div class="container">
         <router-link class="navbar-brand" :to="path" tag="img" :src="logo">
         </router-link>
@@ -120,6 +120,11 @@
   };
 </script>
 <style scoped>
+.navbar-bg{
+  background-color: #FFF;
+    border-color: #FFF;
+    border-bottom: 1px solid rgba(255, 67, 102, 0.5);
+}
   .container{
     /* width: 100%; */
     padding-right: 15px;
