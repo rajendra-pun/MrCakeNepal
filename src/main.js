@@ -5,6 +5,7 @@ import store from "./store";
 import Slick from "vue-slick";
 import jquery from "jquery";
 
+
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 

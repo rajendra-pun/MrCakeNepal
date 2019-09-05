@@ -1,8 +1,8 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg">
-      <div class="container">
-        <router-link class="navbar-brand" :to="path" tag="img" :src="logo">
+      <div class="container ">
+        <router-link class="navbar-brand " :to="path" tag="img" :src="logo">
         </router-link>
         <button
           class="navbar-toggler"
@@ -77,7 +77,7 @@
           {
             id: 1,
             name: "Register",
-            path: "/register",
+            path: "/signup",
             icon: "faCoffee"
           },
           {

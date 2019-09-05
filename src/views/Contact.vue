@@ -1,11 +1,13 @@
 <template>
-  <div class="contact container">
-    <h1>This is an contact page</h1>
+  <div>
+    <ContactComp></ContactComp>
   </div>
 </template>
 <script>
+import ContactComp from "../components/ContactComp"
 export default {
   components:{
+    ContactComp
   }
 }
 </script>

@@ -19,10 +19,12 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "vue": "^2.6.10",
+    "vue-fixed-header": "^3.2.2",
     "vue-flickity": "^1.2.1",
     "vue-owl-carousel": "^2.0.3",
     "vue-router": "^3.0.3",
     "vue-slick": "^1.1.15",
+    "vuejs-scroll-fixed-header": "^1.0.2",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

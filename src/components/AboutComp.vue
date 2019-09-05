@@ -57,7 +57,7 @@ export default {
           path:"/"
         },
         {
-          id:1,
+          id:2,
           name:"About",
           path:"/about"
         }

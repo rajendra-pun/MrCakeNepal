@@ -1,6 +1,5 @@
 <template>
-  <div  id="app">
-
+  <div id="app">
     <NavBar></NavBar>
     <!-- <Home></Home> -->
     <router-view></router-view>
@@ -24,8 +23,15 @@ export default {
 <style >
 * {
   /* margin-top: 0px; */
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+h1, h2, h3, h4, h5{
+  font-family: brixsans;
+}
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
 }
 </style>
